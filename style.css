@@ -266,7 +266,7 @@ body {
 }
 
 .name {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #000;
     margin: 0;
     animation: changeFont 2s infinite;
