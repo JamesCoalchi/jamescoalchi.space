@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="name">James Coalchi</h1>
+    <div class="button-container">
+        <button class="open-modal" onclick="openAboutMe()">About Me</button>
+        <button class="open-modal" onclick="openGame()">Game</button>
+    </div>
+
+    <!-- About Me Modal -->
+    <div id="aboutMeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeAboutMe()">&times;</span>
+                <h2>About Me</h2>
+            </div>
+            <div class="modal-body">
+                <p>n-resize dot jamieee.</p>
+				<a href="mailto:jamie@jamescoalchi.space" style="text-decoration: none;">
+					<button class="mail-button" type="button">Send Email</button>
+				</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeGame()">&times;</span>
+                <h2>Snake Game</h2>
+            </div>
+            <div class="modal-body">
+                <div class="game-placeholder">Snake game will be here.</div>
+            </div>
+        </div>
+    </div>
+	<div class="footer">
+        <p>
+            <a href="mailto:jamie@jamescoalchi.space">jamie@jamescoalchi.space</a> | 
+            <a href="https://github.com/ahhyired" target="_blank">GitHub</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

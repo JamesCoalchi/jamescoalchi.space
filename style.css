@@ -1,0 +1,302 @@
+/* fonts */
+@font-face {
+    font-family: 'RubikMonoOne-Regular';
+    src: url('fonts/RubikMonoOne-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Signika-Regular';
+    src: url('fonts/Signika-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SigOne';
+    src: url('fonts/SigOne.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SixtyfourConvergence-Regular';
+    src: url('fonts/SixtyfourConvergence-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ArchivoBlack-Regular';
+    src: url('fonts/ArchivoBlack-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Barcode';
+    src: url('fonts/Barcode.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'BigShould';
+    src: url('fonts/BigShould.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Bungee';
+    src: url('fonts/Bungee.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Danfo-Regular';
+    src: url('fonts/Danfo-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'DotGothic';
+    src: url('fonts/DotGothic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'EDOTS';
+    src: url('fonts/EDOTS.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lime';
+    src: url('fonts/Lime.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Pacifico-Regular';
+    src: url('fonts/Pacifico-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Plauy';
+    src: url('fonts/plauy.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'PoetOne';
+    src: url('fonts/PoetOne.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Rock';
+    src: url('fonts/Rock.woff2') format('woff2');
+}
+
+/*mail button*/
+
+.mail-button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    background: #f5f5fa;
+    border-radius: 8px;
+    box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
+    color: #2a1f62;
+    cursor: pointer;
+    font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 15px;
+    transition: 0.2s;
+    width: max-content;
+}
+
+.mail-button:hover {
+    background: #f8f8ff;
+    box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+}
+
+/* Modal styles */
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5);
+    animation: fadeIn 0.5s;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.game-placeholder {
+    width: 100%;
+    height: 300px; /* Placeholder for the game */
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Button styles */
+.button-container {
+    margin-top: 20px;
+}
+
+.open-modal {
+	background-color: transparent;
+	border: 1px solid #b0a8a8;
+	box-sizing: border-box;
+	color: #ffffff;
+	font-family: "Avenir Next LT W01 Bold",sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	padding: 16px 23px;
+	position: relative;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	margin-bottom: 80px;
+}
+
+.open-modal:hover,
+.open-modal:active {
+  outline: 0;
+}
+
+.open-modal:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.open-modal:before {
+  background-color: #000000;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.open-modal:hover:before {
+  background-color: #c8c3c3;
+}
+
+/* small screens adjustment*/
+
+@media (min-width: 768px) {
+  .open-modal {
+    padding: 16px 32px;
+  }
+}
+
+@media (min-width: 768px) {
+	.mail-button {
+		padding: 24px;
+	}
+}
+
+@media (min-width: 768px) {
+  .open-modal {
+    padding: 16px 32px;
+  }
+}
+
+@media (max-width: 600px) {
+    .name {
+        font-size: 1.2rem;
+    }
+}
+
+/* footer */
+.footer {
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 0.8rem;
+	color: #666;
+	font-family: Arial, sans-serif;
+}
+
+.footer a {
+    color: #2a1f62;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* body */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.name {
+    font-size: 3rem;
+    color: #000;
+    margin: 0;
+    animation: changeFont 2s infinite;
+	height: 3em; /* Set a fixed height based on font size */
+    overflow: hidden;
+}
+
+/* keyframes */
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes changeFont {
+    0% { font-family: 'RubikMonoOne-Regular', sans-serif; }
+    6.25% { font-family: 'Signika-Regular', sans-serif; }  /* 1/16 */
+    12.5% { font-family: 'SigOne', sans-serif; }          /* 2/16 */
+    18.75% { font-family: 'SixtyfourConvergence-Regular', sans-serif; } /* 3/16 */
+    25% { font-family: 'ArchivoBlack-Regular', sans-serif; } /* 4/16 */
+    31.25% { font-family: 'Barcode', sans-serif; }        /* 5/16 */
+    37.5% { font-family: 'BigShould', sans-serif; }       /* 6/16 */
+    43.75% { font-family: 'Bungee', sans-serif; }         /* 7/16 */
+    50% { font-family: 'Danfo-Regular', sans-serif; }     /* 8/16 */
+    56.25% { font-family: 'DotGothic', sans-serif; }      /* 9/16 */
+    62.5% { font-family: 'EDOTS', sans-serif; }           /* 10/16 */
+    68.75% { font-family: 'Lime', sans-serif; }           /* 11/16 */
+    75% { font-family: 'Pacifico-Regular', sans-serif; }   /* 12/16 */
+    81.25% { font-family: 'Plauy', sans-serif; }          /* 13/16 */
+    87.5% { font-family: 'PoetOne', sans-serif; }         /* 14/16 */
+    93.75% { font-family: 'Rock', sans-serif; }           /* 15/16 */
+    100% { font-family: 'RubikMonoOne-Regular', sans-serif; } /* go back to first font (16/16) */
+}
