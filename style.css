@@ -270,7 +270,7 @@ body {
     color: #000;
     margin: 0;
     animation: changeFont 2s infinite;
-	height: 3em; /* Set a fixed height based on font size */
+	height: 2rem; /* Set a fixed height based on font size */
     overflow: hidden;
 }
 
