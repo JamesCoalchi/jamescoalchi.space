@@ -229,7 +229,7 @@
 
 @media (max-width: 600px) {
     .name {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 }
 
@@ -266,11 +266,11 @@ body {
 }
 
 .name {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #000;
     margin: 0;
     animation: changeFont 2s infinite;
-	height: 2rem; /* Set a fixed height based on font size */
+	height: 3rem; /* Set a fixed height based on font size */
     overflow: hidden;
 }
 
